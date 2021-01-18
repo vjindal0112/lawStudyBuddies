@@ -174,7 +174,7 @@ export default function Home() {
           <br />
           <Flex>
             <BulletPoints>2</BulletPoints>
-            <BulletText>Get your buddies Jan. 28th</BulletText>
+            <BulletText>Get your buddies Jan. 31st</BulletText>
           </Flex>
           <br />
           <Flex>
@@ -203,7 +203,7 @@ export default function Home() {
 
           <p>
             Zoom University makes it really hard to find people to study with in your
-            classes. We’ll faciliate a group chat for you so it’s easy to reach
+            classes. We’ll send you a group chat link for you all to join so it’s easy to reach
             out.{" "}
           </p>
         </TextDiv>
@@ -223,7 +223,7 @@ export default function Home() {
             <b>When is the last day I can fill this out?</b>
           </p>
           <p>
-            The form will close on January 28th at noon because we want to get
+            The form will close on January 29th at noon because we want to get
             you your StudyBuddies by January 31st.
           </p>
           <p>
