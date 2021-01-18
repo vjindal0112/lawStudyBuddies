@@ -23,8 +23,8 @@ export const Button = styled.a`
 
   transition: all 0.5s;
   &:hover {
-    border: 3px solid #cfab00;
-    background-color: #cfab00;
+    border: 3px solid #cfab00 !important;
+    background-color: #cfab00 !important;
     color: #fafafa;
   }
 `;

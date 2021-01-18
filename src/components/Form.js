@@ -11,11 +11,9 @@ const Form = ({ history }) => {
   const [data, setData] = useState({
     name: "",
     year: "",
-    gender: "",
     class: "",
     interest: "2",
     "binge-study": "2",
-    "student-org": "",
     email: "",
   });
 
@@ -24,11 +22,9 @@ const Form = ({ history }) => {
   const keys = [
     "name",
     "year",
-    "gender",
     "class",
     "interest",
     "binge-study",
-    "student-org",
     "email",
   ];
 
@@ -201,60 +197,40 @@ const Form = ({ history }) => {
               />
 
               <SelectBar
-                title="How do you identify?"
-                label="Gender"
+                title="Which class are you taking?"
+                label="Class"
                 keyName={keys[2]}
-                choices={gender}
+                choices={options}
                 moveSectionDown={fullpageApi && fullpageApi.moveSectionDown}
                 onChange={onChangeListener}
                 initial={data[keys[2]]}
               />
 
-              <SelectBar
-                title="Which class are you taking?"
-                label="Class"
+              <Slider
+                title="I am interested in taking this class"
                 keyName={keys[3]}
-                choices={options}
                 moveSectionDown={fullpageApi && fullpageApi.moveSectionDown}
                 onChange={onChangeListener}
                 initial={data[keys[3]]}
               />
 
               <Slider
-                title="I am interested in taking this class"
+                title="I only study in a group setting right before the final"
                 keyName={keys[4]}
                 moveSectionDown={fullpageApi && fullpageApi.moveSectionDown}
                 onChange={onChangeListener}
                 initial={data[keys[4]]}
               />
 
-              <Slider
-                title="I usually binge study a couple of days before a midterm"
-                keyName={keys[5]}
-                moveSectionDown={fullpageApi && fullpageApi.moveSectionDown}
-                onChange={onChangeListener}
-                initial={data[keys[5]]}
-              />
-
-              <SelectBar
-                title="Which type of student org are you most involved in?"
-                label="Select affiliation"
-                keyName={keys[6]}
-                choices={orgs}
-                moveSectionDown={fullpageApi && fullpageApi.moveSectionDown}
-                onChange={onChangeListener}
-                initial={data[keys[6]]}
-              />
-
               <Question
                 title="What's your UMich email?"
                 label="Email"
-                keyName={keys[7]}
+                keyName={keys[5]}
                 moveSectionDown={pushToSheets}
                 onChange={onChangeListener}
                 submitFunction={submit}
                 submit={true}
-                initial={data[keys[7]]}
+                initial={data[keys[5]]}
               />
             </ReactFullpage.Wrapper>
           </>
@@ -266,35 +242,11 @@ const Form = ({ history }) => {
 
 export default withRouter(Form);
 
-const orgs = [
-  { value: "Business", label: "Business" },
-  { value: "Engineering", label: "Engineering" },
-  { value: "Greek Life", label: "Greek Life" },
-  { value: "Medical", label: "Medical" },
-  { value: "Military", label: "Military" },
-  { value: "Religious", label: "Religious" },
-  { value: "Sports", label: "Sports" },
-  {
-    value: "Social - but not Greek Life",
-    label: "Social - but not Greek Life",
-  },
-  { value: "Other", label: "Other" },
-  { value: "None yet!", label: "None yet!" },
-];
-
 const year = [
-  { value: "Freshman", label: "Freshman" },
-  { value: "Sophomore", label: "Sophomore" },
-  { value: "Junior", label: "Junior" },
-  { value: "Senior", label: "Senior" },
-  { value: "5th Year", label: "5th Year" },
-];
-
-const gender = [
-  { value: "Male", label: "Male" },
-  { value: "Female", label: "Female" },
-  { value: "Non-Binary", label: "Non-Binary" },
-  { value: "Prefer not to say", label: "Prefer not to say" },
+  { value: "1L", label: "1L" },
+  { value: "2L", label: "2L" },
+  { value: "3L", label: "3L" },
+  { value: "Other", label: "Other" },
 ];
 
 const options = [

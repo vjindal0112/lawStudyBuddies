@@ -4,7 +4,8 @@ import Header from "../components/Header";
 import CountUp from "react-countup";
 import { Button, UserCount, Banner } from "../components/styles"; // styles used for shared styles
 import ReactGA from "react-ga";
-import { collegeDark, collegeLight } from "../constants";
+import { collegeDark, collegeLight, collegeLightBold } from "../constants";
+import LazyLoad from "react-lazyload";
 
 const Heading = styled.h1`
   font-size: 60px;
@@ -78,6 +79,7 @@ const BgImage = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-position: center;
 `;
 
 const Overlay = styled.div`
@@ -89,6 +91,22 @@ const Overlay = styled.div`
   z-index: 0;
 `;
 
+const pulse = keyframes`
+  0% {
+    background-color: ${collegeLight};
+  }
+
+  50% {
+    background-color: ${collegeLightBold};
+  }
+  100% {
+    background-color: ${collegeLight};
+  }
+`;
+
+const PulsingButton = styled(Button)`
+  animation: ${pulse} 2s ease-in-out infinite;
+`;
 
 export default function Home() {
   const [userCount, setUserCount] = useState(0);
@@ -105,7 +123,15 @@ export default function Home() {
     <>
       <Header />
       <BgImage>
-        <div className="App" style={{ height: "88vh", minHeight: "88vh", backgroundImage: "linear-gradient(rgba(0, 88, 172, 0.7), rgba(0, 102, 199, 0.7))" }}>
+        <div
+          className="App"
+          style={{
+            height: "88vh",
+            minHeight: "88vh",
+            backgroundImage:
+              "linear-gradient(rgba(0, 88, 172, 0.7), rgba(0, 102, 199, 0.7))",
+          }}
+        >
           {/*<Banner>The form is closed!</Banner>*/}
           <Logo src="/StudyBuddyLogo.png" />
           <Heading>Law StudyBuddies</Heading>
@@ -125,7 +151,7 @@ export default function Home() {
             </UserCount>
             <div>Wolverines</div>
           </div>
-          <Button
+          <PulsingButton
             href="/form"
             onClick={() => {
               ReactGA.event({
@@ -136,7 +162,7 @@ export default function Home() {
             }}
           >
             Find your Buddies
-          </Button>
+          </PulsingButton>
         </div>
       </BgImage>
       <Section padding="20px" backgroundColor="#fefefe">
