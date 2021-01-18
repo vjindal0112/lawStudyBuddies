@@ -5,7 +5,7 @@ export default function Header({title, description}) {
   return (
     <>
       <Helmet
-        title={title ? `${title} | UMich StudyBuddies` : "UMich StudyBuddies"}
+        title={title ? `${title} | Law StudyBuddies` : "Law StudyBuddies"}
         meta={[
           {
             name: "description",
@@ -14,7 +14,7 @@ export default function Header({title, description}) {
           },
           {
             name: "og:title", 
-            content: title ? `${title} | UMich StudyBuddies` : "UMich StudyBuddies",
+            content: title ? `${title} | Law StudyBuddies` : "Law StudyBuddies",
           },
           {
             name: "og:description",
@@ -32,7 +32,7 @@ export default function Header({title, description}) {
           },
           {
             name: "twitter:title",
-            content: title ? `${title} | UMich StudyBuddies` : "UMich StudyBuddies",
+            content: title ? `${title} | Law StudyBuddies` : "Law StudyBuddies",
           },
           {
             name: "twitter:description",

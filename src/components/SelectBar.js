@@ -141,7 +141,7 @@ const SelectBar = ({
                   })
                   .map((obj, index) => (
                     <React.Fragment key={index}>
-                      {index < 20 ? (
+                      {index < 200 ? (
                         <ListItem
                           // noGroupMe={false}
                           key={index}

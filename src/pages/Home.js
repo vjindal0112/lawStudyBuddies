@@ -188,7 +188,7 @@ export default function Home() {
           <h1 style={{ textAlign: "center" }}>Get connected</h1>
           <p>
             We match you with a group of 4 people based on your study habits,
-            interests, and club affiliations. You’ll only be matched with people
+            and interests. You’ll only be matched with people
             in your class.
           </p>
           <p>
@@ -202,7 +202,7 @@ export default function Home() {
           <h1 style={{ textAlign: "center" }}>We make it easy</h1>
 
           <p>
-            Zoom University makes it really hard to find friends in your
+            Zoom University makes it really hard to find people to study with in your
             classes. We’ll faciliate a group chat for you so it’s easy to reach
             out.{" "}
           </p>
@@ -223,8 +223,8 @@ export default function Home() {
             <b>When is the last day I can fill this out?</b>
           </p>
           <p>
-            The form will close on January 26th at noon because we want to get
-            you your StudyBuddies by January 28th.
+            The form will close on January 28th at noon because we want to get
+            you your StudyBuddies by January 31st.
           </p>
           <p>
             <b>Where can I find more information?</b>
