@@ -5,7 +5,6 @@ import CountUp from "react-countup";
 import { Button, UserCount, Banner } from "../components/styles"; // styles used for shared styles
 import ReactGA from "react-ga";
 import { collegeDark, collegeLight, collegeLightBold } from "../constants";
-import LazyLoad from "react-lazyload";
 
 const Heading = styled.h1`
   font-size: 60px;
