@@ -188,8 +188,7 @@ export default function Home() {
           <h1 style={{ textAlign: "center" }}>Get connected</h1>
           <p>
             We match you with a group of 4 people based on your study habits,
-            and interests. You’ll only be matched with people
-            in your class.
+            and interests. You’ll only be matched with people in your class.
           </p>
           <p>
             All of this data will be completely private, so you have nothing to
@@ -202,9 +201,9 @@ export default function Home() {
           <h1 style={{ textAlign: "center" }}>We make it easy</h1>
 
           <p>
-            Zoom University makes it really hard to find people to study with in your
-            classes. We’ll send you a group chat link for you all to join so it’s easy to reach
-            out.{" "}
+            Zoom University makes it really hard to find people to study with in
+            your classes. We’ll send you a group chat link for you all to join
+            so it’s easy to reach out.{" "}
           </p>
         </TextDiv>
       </Section>
@@ -243,10 +242,14 @@ export default function Home() {
             <a href="mailto:team@studybuddies.ai">team@studybuddies.ai</a>. We'd
             be happy to answer any questions
           </p>
+          <p>
+            <b>Where can I learn about data ownership?</b>
+          </p>
+          <p>
+            Check out our commitment to keeping your data safe here:{" "}
+            <a href="/privacy">Our Promise</a>
+          </p>
         </TextDiv>
-      </Section>
-      <Section padding="50px" backgroundColor="#fefefe" style={{"height": "50px", "paddingTop": "10px", "paddingBottom": "10px"}}>
-          
       </Section>
     </>
   );

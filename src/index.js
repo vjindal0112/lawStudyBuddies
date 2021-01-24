@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import * as serviceWorker from "./serviceWorker";
 import FormPage from "./pages/FormPage";
 import Feedback from "./pages/Feedback";
+import PrivacyPol from "./pages/PrivacyPol";
 import Raffle from "./pages/Raffle";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -18,10 +19,11 @@ const routing = (
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/form" component={FormPage} />
+      <Route path="/privacy" component={PrivacyPol} />
       <Route path="/submitted" component={Submitted} />
       <Route path="/home" component={Home} />
       <Route path="/feedback" component={Feedback} />
-      <Route path="/Raffle" component={Raffle} />
+      <Route path="/raffle" component={Raffle} />
     </Switch>
   </Router>
 );
