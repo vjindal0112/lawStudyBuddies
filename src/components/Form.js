@@ -215,6 +215,11 @@ const Form = ({ history }) => {
                 initial={data[keys[4]]}
               />
 
+              <Privacy
+                message="Just a heads up, by submitting this form you agree to share your email with your buddies"
+                moveSectionDown={fullpageApi && fullpageApi.moveSectionDown}
+              />
+
               <Question
                 title="What's your UMich email?"
                 label="Email"
