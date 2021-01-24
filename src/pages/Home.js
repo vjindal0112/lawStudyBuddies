@@ -245,6 +245,9 @@ export default function Home() {
           </p>
         </TextDiv>
       </Section>
+      <Section padding="50px" backgroundColor="#fefefe" style={{"height": "50px", "paddingTop": "10px", "paddingBottom": "10px"}}>
+          
+      </Section>
     </>
   );
 }
