@@ -18,7 +18,7 @@ const Submitted = () => {
       <div className="App">
         <h1>Good luck this semester!</h1>
         <Texth4>
-          You will hear back from us January 31st with your study buddies!
+          You will hear back from us February 7th with your study buddies!
         </Texth4>
         <Button
           href="/form"
