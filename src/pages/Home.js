@@ -131,7 +131,7 @@ export default function Home() {
               "linear-gradient(rgba(0, 88, 172, 0.7), rgba(0, 102, 199, 0.7))",
           }}
         >
-          {/*<Banner>The form is closed!</Banner>*/}
+          <Banner>The form is closed!</Banner>
           <Logo src="/StudyBuddyLogo.png" />
           <Heading>Law StudyBuddies</Heading>
           <div
@@ -151,7 +151,6 @@ export default function Home() {
             <div>Wolverines</div>
           </div>
           <PulsingButton
-            href="/form"
             onClick={() => {
               ReactGA.event({
                 category: "Navigation",
@@ -160,7 +159,7 @@ export default function Home() {
               });
             }}
           >
-            Find your Buddies
+            Closed
           </PulsingButton>
         </div>
       </BgImage>
